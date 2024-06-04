@@ -9,6 +9,6 @@ syntax = "proto3";
 
 message Money {
     string currency_code = 1;
-    int32 integral_amount = 2;
-    float decimal_amount = 3;
+    int64 integral_amount = 2; // int64 to allow for larger whole numbers
+    int32 decimal_amount = 3; // Not a decimal as it is a separate number placed after the decimal
 }
