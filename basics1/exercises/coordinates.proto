@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+/*
+    Task - create a message Latitude Longitude (example: -33.865382, 151.192861). With fields:
+    Latitude (number)
+    Longitude (number)
+*/
+
+message LatLong {
+    float latitude = 1;
+    float longitude = 2;
+}
